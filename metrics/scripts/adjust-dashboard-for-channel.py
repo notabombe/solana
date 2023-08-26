@@ -117,8 +117,8 @@ elif channel == 'stable':
                                     'useTags': False}]
 else:
     # Non-stable dashboard includes all the dev clusters
-    data['title'] = 'Cluster Telemetry ({})'.format(channel)
-    data['uid'] = 'monitor-' + channel
+    data['title'] = f'Cluster Telemetry ({channel})'
+    data['uid'] = f'monitor-{channel}'
     data['templating']['list'] = [{'current': {'text': '$datasource',
                                                'value': '$datasource'},
                                    'hide': 1,
